@@ -1,0 +1,36 @@
+Para ejecutar la aplicación con Live Server:
+
+    Instalación de Visual Studio Code (VS Code):
+        Descarga e instala Visual Studio Code desde este enlace.
+
+    Preparación del código:
+        Copia el código HTML, CSS y JavaScript en archivos separados.
+        Guarda el archivo HTML como index.html, el CSS como styles.css, y el JavaScript como script.js.
+        Guarda estos archivos en una carpeta en tu computadora.
+
+    Instalación de Live Server:
+        Abre VS Code y ve al menú de extensiones (puedes hacerlo presionando Ctrl+Shift+X o Cmd+Shift+X en Mac).
+        Busca "Live Server" en el cuadro de búsqueda y haz clic en "Install" (Instalar) junto a la extensión desarrollada por Ritwick Dey.
+
+    Ejecución de la aplicación:
+        Abre el archivo index.html en VS Code.
+        Haz clic con el botón derecho en cualquier lugar del editor y selecciona "Open with Live Server" (Abrir con Live Server) en el menú desplegable.
+        Esto abrirá automáticamente tu navegador web predeterminado y cargará la aplicación en una nueva pestaña.
+
+Para ejecutar la aplicación con XAMPP:
+
+    Instalación de XAMPP:
+        Descarga XAMPP desde aquí e instálalo siguiendo las instrucciones proporcionadas.
+
+    Preparación del código:
+        Crea una nueva carpeta dentro del directorio htdocs de XAMPP. Por ejemplo, en Windows, la ruta es C:\xampp\htdocs y en macOS es /Applications/XAMPP/htdocs.
+        Copia los archivos index.html, styles.css y script.js en esta carpeta recién creada.
+
+    Inicio de Apache:
+        Abre XAMPP Control Panel desde el menú de inicio (en Windows) o desde la carpeta de aplicaciones (en macOS).
+        Haz clic en el botón "Start" (Iniciar) junto a "Apache" para iniciar el servidor.
+
+    Ejecución de la aplicación:
+        Abre tu navegador web e ingresa la siguiente URL en la barra de direcciones: http://localhost/nombre_de_la_carpeta, donde `nombre_de_la
+
+carpetaes el nombre de la carpeta que creaste dentro dehtdocs. Por ejemplo, si creaste una carpeta llamada mi_aplicacion, la URL sería http://localhost/mi_aplicacion`.

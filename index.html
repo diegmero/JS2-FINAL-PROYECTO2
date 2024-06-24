@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú de Filtros para Formularios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <!-- Encabezado de la página -->
+    <h1>Copirigth 2024 | Diego Romero</h1>
+  </header>
+
+  <div class="grupo">
+    <div class="container">
+      <!-- Sección del Formulario -->
+      <div class="formulario">
+        <h2>Formulario de Registro</h2>
+        <form id="formAgregar">
+          <!-- Campo para el nombre -->
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required><br>
+
+          <!-- Campo para la edad -->
+          <label for="edad">Edad:</label>
+          <input type="number" id="edad" name="edad" required><br>
+
+          <!-- Campo para el email -->
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br>
+
+          <!-- Campo para el país -->
+          <label for="pais">País:</label>
+          <input type="text" id="pais" name="pais" required><br>
+
+          <!-- Campo para la profesión -->
+          <label for="profesion">Profesión:</label>
+          <input type="text" id="profesion" name="profesion" required><br>
+
+          <!-- Botón para agregar el registro -->
+          <input type="submit" value="Agregar Registro">
+        </form>
+      </div>
+
+      <div class="container-2">
+        <!-- Sección del Menú de Filtros -->
+        <div class="filtro">
+          <h2>Filtros</h2>
+          <!-- Campo para seleccionar el filtro -->
+          <select id="filtroCampo">
+            <option value="nombre">Nombre</option>
+            <option value="edad">Edad</option>
+            <option value="email">Email</option>
+            <option value="pais">País</option>
+            <option value="profesion">Profesión</option>
+          </select>
+          <!-- Campo para ingresar el valor del filtro -->
+          <input type="text" id="filtroValor" placeholder="Valor de Búsqueda">
+          <!-- Botón para aplicar el filtro -->
+          <button id="btnFiltrar">Filtrar</button>
+          <!-- Botón para resetear los filtros -->
+          <button id="btnReset">Reset</button>
+        </div>
+
+        <!-- Sección de la Lista de Registros -->
+        <div class="registros">
+          <h2>Registros</h2>
+          <ul id="listaRegistros"></ul>
+        </div>
+      </div>
+
+      <!-- Sección del Historial de Cambios -->
+      <div class="historial">
+        <h2>Historial de Cambios</h2>
+        <ul id="historialCambios"></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Inclusión del archivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+  font-family: 'Roboto', sans-serif; /* Fuente moderna */
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* Fondo gris claro */
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #273656; /* Color de fondo azul */
+  color: #fff; /* Texto blanco */
+  padding: 20px 0; /* Relleno arriba y abajo */
+  text-align: center; /* Texto centrado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Contenedor principal que agrupa todo el contenido */
+.grupo {
+  width: 90%;
+  display: flex;
+  padding: auto;
+  margin: auto;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+  gap: 20px; /* Espacio entre elementos */
+}
+
+/* Contenedor general para el formulario y filtros */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Contenedor específico para los filtros y registros */
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px;
+}
+
+/* Estilos para el título principal */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em; /* Tamaño de fuente más grande */
+}
+
+/* Estilos para el formulario */
+.formulario, .historial {
+  background-color: #fff; /* Fondo blanco */
+  padding: 20px;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  width: 45%; /* Ancho del 45% */
+  margin-bottom: 20px;
+}
+
+.formulario h2, .historial h2 {
+  color: #273656; /* Texto azul */
+  margin-bottom: 10px; /* Margen inferior de 10px */
+}
+
+/* Estilos para la sección del historial */
+.historial ul {
+  list-style-type: none; /* Sin viñetas */
+  padding: 0;
+}
+
+.historial ul li {
+  background-color: #f8f9fa; /* Fondo gris claro */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para las etiquetas del formulario */
+.formulario label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333; /* Color gris oscuro */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para los campos de entrada del formulario */
+.formulario input[type="text"],
+.formulario input[type="number"],
+.formulario input[type="email"],
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1em; /* Tamaño de fuente */
+}
+
+/* Estilos para el botón de envío del formulario */
+.formulario input[type="submit"] {
+  background-color: #4e67b4; /* Fondo azul */
+  color: #ffffff; /* Texto blanco */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em; /* Tamaño de fuente */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover para el botón de envío del formulario */
+.formulario input[type="submit"]:hover {
+  background-color: #4e67b4; /* Azul más oscuro */
+}
+
+/* Estilos para la lista de registros */
+.lista-registros {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Estilos para los elementos de la lista de registros */
+.lista-registros li {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos para los botones dentro de la lista de registros */
+.lista-registros li button {
+  background-color: #dc3545; /* Fondo rojo */
+  color: #fff; /* Texto blanco */
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Estilos para el botón de editar */
+.lista-registros li button.editar {
+  background-color: #ffc107; /* Fondo amarillo */
+}
+
+/* Efecto hover para los botones */
+.lista-registros li button:hover {
+  background-color: #c82333; /* Rojo más oscuro */
+}
+.lista-registros li button.editar:hover {
+  background-color: #e0a800; /* Amarillo más oscuro */
+}
+
+/* Estilos para la sección de filtros */
+.filtro {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.filtro h2 {
+  color: #0b4788;
+  margin-bottom: 10px;
+}
+
+.filtro select, .filtro input[type="text"], .filtro button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.filtro button {
+  background-color: #4e67b4;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filtro button:hover {
+  background-color: #0056b3;
+}
